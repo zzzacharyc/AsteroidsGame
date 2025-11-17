@@ -1,4 +1,4 @@
-class Star {
+public class Star {
   z[] stars = new z[200];
 
   Star(){
@@ -6,13 +6,13 @@ class Star {
       stars[i] = new z();
     }
   }
-  void show() {
+ public void show() {
     noStroke();
     for (int i = 0; i < stars.length; i++) {
       stars[i].show(); 
     }
   }
-  class z {
+ public class z {
     int x, y, size;
     color c;
     z() {
@@ -21,7 +21,7 @@ class Star {
       size = 1 + (int)(Math.random() * 5);
       c = color((int)(Math.random()*50+150), (int)(Math.random()*50+150), (int)(Math.random()*50 + 200));
     }
-    void show() {
+  public void show() {
       fill(c);
       ellipse(x, y, size, size);
     }
