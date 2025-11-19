@@ -14,9 +14,15 @@ public void draw() {
   stars.show();
   bob.show();
   bob.move();
-  if (Forward) bob.accelerate(0.3);
-  if (Left) bob.turn(-7);
-  if (Right) bob.turn(7);
+  if (Forward){
+     bob.accelerate(0.3);
+  }
+  if (Left){
+    bob.turn(-7);
+  }
+  if (Right){
+    bob.turn(7);
+  }
 }
 public void keyPressed() {
   if (key == 'w') Forward = true;
